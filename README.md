@@ -15,6 +15,15 @@ Then run a simple static server for the index.html file. I've been using [m3ng9i
 ran -p 8080
 ```
 
+## status
+
+For now, this demo uses a static GeoJSON polygon drawn around the US Pentagon. Clicking the camera icon in the Draw control bar will save a PNG image using the polygon to clip the satellite imagery.
+
+To do:
+* [ ] Change from a camera click to a copy/paste interaction
+* [ ] Copy imagery clipped from a shape and then paste copies back on the map (at scale)
+* [ ] Accept both drawn shapes or an uploaded GeoJSON shape
+
 ## inspiration
 
 Originally inspired by [Ever Given Ever YWhere](https://evergiven-everywhere.glitch.me/) from [@en_dash](https://twitter.com/en_dash). An initial demo can be found at [engelsjk/evergiven-and-other-things](https://github.com/engelsjk/evergiven-and-other-things). Then this tweet by [@mappingmashups](https://twitter.com/mappingmashups) added further inspiration:
