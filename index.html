@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+    <meta name='author' content='MapBox' />
+    <meta name='description' content='simply edit geojson map data' />
+    <meta property='og:site_name' content='geojson.io' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1'>
+    <!--[if lt IE 9]>
+    <script type='text/javascript' src='lib/aight.min.js'></script>
+  <![endif]-->
+    <title>mapclip</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.0/mapbox-gl-draw.css'
+        type='text/css' />
+    <style>
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .mapbox-gl-draw_camera {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjYW1lcmEiIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1jYW1lcmEgZmEtdy0xNiIgcm9sZT0iaW1nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik01MTIgMTQ0djI4OGMwIDI2LjUtMjEuNSA0OC00OCA0OEg0OGMtMjYuNSAwLTQ4LTIxLjUtNDgtNDhWMTQ0YzAtMjYuNSAyMS41LTQ4IDQ4LTQ4aDg4bDEyLjMtMzIuOWM3LTE4LjcgMjQuOS0zMS4xIDQ0LjktMzEuMWgxMjUuNWMyMCAwIDM3LjkgMTIuNCA0NC45IDMxLjFMMzc2IDk2aDg4YzI2LjUgMCA0OCAyMS41IDQ4IDQ4ek0zNzYgMjg4YzAtNjYuMi01My44LTEyMC0xMjAtMTIwcy0xMjAgNTMuOC0xMjAgMTIwIDUzLjggMTIwIDEyMCAxMjAgMTIwLTUzLjggMTIwLTEyMHptLTMyIDBjMCA0OC41LTM5LjUgODgtODggODhzLTg4LTM5LjUtODgtODggMzkuNS04OCA4OC04OCA4OCAzOS41IDg4IDg4eiI+PC9wYXRoPjwvc3ZnPg==);
+        }
+    </style>
+</head>
+
+<body id='map-body'>
+    <div id='map'></div>
+    <script src='dist/bundle.js'></script>
+</body>
+
+</html>
