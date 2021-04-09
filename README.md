@@ -1,8 +1,6 @@
 # mapclips
 
-![](images/banner.png)
-
-An experimental demonstration of clipping Mapbox imagery using arbitrary shapes. Intended for size comparisons of various geospatial features at scale (e.g. the *Ever Given*).
+An experimental proof-of-concept for clipping Mapbox imagery using arbitrary shapes. Intended for size comparisons of various geospatial features at scale (e.g. the *Ever Given*).
 
 ## run
 
