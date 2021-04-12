@@ -9,8 +9,8 @@ export default function clip(map, shape) {
         this.stream.point(point.x, point.y);
     }
     
-    var rshape = rewind(shape, true); // d3 expects reverse winding from geojson (make sure a hole is clipping)
-
+    var data = rewind(shape, true); // d3 expects reverse winding from geojson (make sure a hole is clipping)
+    
     const mapCanvas = map.getCanvas();
     var width = mapCanvas.offsetWidth;
     var height = mapCanvas.offsetHeight;
@@ -21,7 +21,6 @@ export default function clip(map, shape) {
     canvas.width = width;
     canvas.height = height;
 
-    var data = { type: 'FeatureCollection', features: [rshape] };
     var transform = d3.geoTransform({ point: projectPoint });
     // var bounds = d3.geoPath().projection(transform).bounds(data);
 

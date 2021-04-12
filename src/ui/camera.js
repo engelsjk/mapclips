@@ -1,7 +1,7 @@
 import MapboxDraw from '@mapbox/mapbox-gl-draw';
 import CameraMode from '../lib/camera_mode';
 import clip from '../lib/clip';
-import shape from '../data/shape';
+import shapePentagon from '../data/shape';
 
 export default function camera(map) {
 
@@ -18,8 +18,18 @@ export default function camera(map) {
         container: document.getElementsByClassName("mapboxgl-ctrl-group")[0],
         className: 'mapbox-gl-draw_camera',
         title: `Camera tool '(c)'`,
-        onActivate: () => clip(map, shape()) // console.log('click') //Draw.changeMode('camera'),
+        onActivate: () => click(map, Draw) // console.log('click') //Draw.changeMode('camera'),
     });
+}
+
+function click(map, Draw) {
+    var data = Draw.getAll();
+    if (data.features.length > 0) {
+        var shape = data;
+    } else {
+        var shape = shapePentagon();
+    }
+    clip(map, shape);
 }
 
 function createControlButton(id, options = {}) {
